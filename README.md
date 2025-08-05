@@ -13,27 +13,27 @@ GreenCircle is a professional social networking platform inspired by LinkedIn. I
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/vineet-singh-saini/greencircle.git
-   cd greencircle
+   git clone https://github.com/vineet-singh-saini/Green-Circle.git
+   cd Green-Circle
    ```
 
 2. **Frontend Setup:**
    ```bash
-   cd client
+   cd frontend
    npm install
-   npm start
+   npm run dev
    ```
 
 3. **Backend Setup:**
    ```bash
-   cd server
+   cd backend
    npm install
-   npm start
+   nodemon index.js
    ```
 
 ## Deployment Links
-   - Backend runs on `https://mini-linkedin-backend-f2ky.onrender.com`
-   - Frontend runs on `https://mini-linked-in-hazel.vercel.app/`
+   - Backend runs on `https://green-circle-backend.onrender.com`
+   - Frontend runs on `https://green-circle-delta.vercel.app/`
 
 ## 👤 Admin Credentials
 
