@@ -1,0 +1,142 @@
+.register-div {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e9f5ec, #cde4d3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.register {
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 128, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.register-left {
+  flex: 1;
+  background: linear-gradient(180deg, #2e7d32, #43a047);
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.register-left h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.register-left p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.register-form {
+  flex: 1;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.register-form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.register-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #388e3c;
+}
+
+
+@media (max-width: 768px) {
+  .register {
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .register-left,
+  .register-form {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .register-left h2 {
+    font-size: 1.6rem;
+  }
+
+  .register-left p {
+    font-size: 1rem;
+  }
+
+  .register-form {
+    padding: 2rem 1rem;
+  }
+
+  .register-form input {
+    font-size: 0.95rem;
+  }
+
+  .register-form button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-left h2 {
+    font-size: 1.4rem;
+  }
+
+  .register-left p {
+    font-size: 0.9rem;
+  }
+
+  .register-form input {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  .register-form button {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+}

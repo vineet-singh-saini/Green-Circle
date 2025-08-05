@@ -1,0 +1,104 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0fdf4;
+  margin: 0;
+  padding: 0;
+   white-space: pre-wrap;
+}
+
+.home-container-green {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.feed-heading-green {
+  text-align: center;
+  color: #065f46;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.post-creator-green {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6f4ea;
+  padding: 1rem;
+  border: 1px solid #c1e1c1;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.post-creator-green textarea {
+  resize: none;
+  min-height: 100px;
+  padding: 1rem;
+  border: 1px solid #a7d7a7;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f7fff7;
+  color: #065f46;
+}
+
+.post-creator-green button {
+  padding: 0.6rem 1.5rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+.post-creator-green button:hover {
+  background-color: #059669;
+}
+
+.posts-list-green {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post-card-green {
+  background-color: #ffffff;
+  border: 1px solid #c7f2cd;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 128, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.post-card-green:hover {
+  transform: scale(1.01);
+}
+
+.post-author-green a {
+  text-decoration: none;
+  color: #047857;
+  font-weight: 600;
+}
+
+.post-content-green {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #111827;
+  line-height: 1.5;
+}
+
+.post-time-green {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: right;
+}
+
+.no-posts-text {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
