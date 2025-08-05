@@ -13,7 +13,7 @@ const Home = () => {
 
  useEffect(() => {
   const fetchPosts = async () => {
-    const res = await axios.get('https://mini-linkedin-backend-f2ky.onrender.com/feed/posts');
+    const res = await axios.get('https://green-circle-backend.onrender.com/feed/posts');
     setPosts(res.data);
   };
 
@@ -23,7 +23,7 @@ const Home = () => {
 
   const submitPost = async () => {
     try {
-      const res = await axios.post('https://mini-linkedin-backend-f2ky.onrender.com/feed/posts', {
+      const res = await axios.post('https://green-circle-backend.onrender.com/feed/posts', {
         authorId: user._id,
         content,
       });
@@ -38,7 +38,7 @@ const Home = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await axios.get('https://mini-linkedin-backend-f2ky.onrender.com/feed/posts');
+        const res = await axios.get('https://green-circle-backend.onrender.com/feed/posts');
         setPosts(res.data);
       } catch (err) {
         console.log('Error fetching posts:', err);

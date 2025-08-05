@@ -6,7 +6,7 @@ const port = process.env.PORT || 5000;
 require('dotenv').config();
 
 app.use(cors({
-  origin: 'https://mini-linked-in-hazel.vercel.app',
+  origin: 'https://green-circle-delta.vercel.app',
   credentials: true 
 }));
 app.use(express.json());

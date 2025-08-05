@@ -9,7 +9,7 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('https://mini-linkedin-backend-f2ky.onrender.com/auth/register', form);
+    await axios.post('https://green-circle-backend.onrender.com/auth/register', form);
     alert('You Have Been Successfully Registered');
     navigate('/login');
   };

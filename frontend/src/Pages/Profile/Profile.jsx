@@ -13,11 +13,11 @@ const Profile = () => {
     useEffect(() => {
         const fetchProfileData = async () => {
             try {
-                const res = await axios.get(`https://mini-linkedin-backend-f2ky.onrender.com/feed/user/${id}`);
+                const res = await axios.get(`https://green-circle-backend.onrender.com/feed/user/${id}`);
                 setUserPosts(res.data);
 
               
-                const userRes = await axios.get(`https://mini-linkedin-backend-f2ky.onrender.com/auth/user/${id}`);
+                const userRes = await axios.get(`https://green-circle-backend.onrender.com/auth/user/${id}`);
                 console.log(userRes);
                 setUserName(userRes.data.name);
                 setBio(userRes.data.bio);

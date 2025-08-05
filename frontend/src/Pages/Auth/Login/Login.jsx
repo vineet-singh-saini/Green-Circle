@@ -11,7 +11,7 @@ const Login = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://mini-linkedin-backend-f2ky.onrender.com/auth/login', formData);
+      const res = await axios.post('https://green-circle-backend.onrender.com/auth/login', formData);
       sessionStorage.setItem('user', JSON.stringify(res.data.user));
       setLoggedIn(true);
     } catch (err) {
